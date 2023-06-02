@@ -1,12 +1,13 @@
 blurhash==1.1.4
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
+charset-normalizer==3.1.0
 click==8.1.2
 decorator==4.4.2
 dparse==0.5.2
 idna==2.10
 joblib==1.2.0
-Mastodon.py==1.5.1
+Mastodon.py==1.8.1
 nltk==3.6.7
 packaging==20.4
 pyparsing==2.4.7
@@ -15,8 +16,7 @@ python-magic==0.4.18
 pytz==2020.1
 PyYAML==5.4.1
 regex==2022.1.18
-requests==2.25.1
-safety==1.9.0
+requests==2.31.0
 six==1.15.0
 toml==0.10.1
 tqdm==4.48.0
