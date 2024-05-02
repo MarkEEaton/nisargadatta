@@ -5,7 +5,7 @@ charset-normalizer==3.1.0
 click==8.1.2
 decorator==4.4.2
 dparse==0.5.2
-idna==2.10
+idna==3.7
 joblib==1.2.0
 Mastodon.py==1.8.1
 nltk==3.8.1
