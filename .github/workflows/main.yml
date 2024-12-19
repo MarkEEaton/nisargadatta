@@ -16,5 +16,5 @@ jobs:
         pip install -r requirements.txt
         python parse.py
       env:
-        WHY_EMAIL: ${{ secrets.NISARGADATTA_EMAIL }}
-        WHY_PWD: ${{ secrets.NISARGADATTA_PWD }}
+        NISARGADATTA_EMAIL: ${{ secrets.NISARGADATTA_EMAIL }}
+        NISARGADATTA_PWD: ${{ secrets.NISARGADATTA_PWD }}
