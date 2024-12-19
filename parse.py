@@ -3,10 +3,22 @@ nltk.download('punkt_tab')
 from random import randrange
 from mastodon import Mastodon
 
-mastodon = Mastodon(
-    access_token = 'nisargadatta_usercred.secret',
-    api_base_url = 'https://mastodon.ocert.at'
+base_url = 'https://mastodon.ocert.at'
+
+app = Mastodon.create_app(
+    'pytooterapp',
+    api_base_url = base_url,
 )
+
+mastodon = Mastodon(client_id = app[0], client_secret = app[1], api_base_url =
+                    base_url)
+token = mastodon.log_in(
+    os.environ['NISARGADATTA_EMAIL'],
+    os.environ['NISARGADATTA_PWD'],
+)
+
+mastodon = Mastodon(access_token = token, api_base_url = base_url)
+
 
 with open("iamspaced.txt", "r") as f:
     text = f.read()
