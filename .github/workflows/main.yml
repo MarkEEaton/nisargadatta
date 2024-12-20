@@ -1,9 +1,10 @@
 on:
   schedule:
-  - cron: '0 10 * * *'
+  - cron: '4 10 * * *'
 
 jobs:
   deploy:
+    permissions: {}
     runs-on: ubuntu-latest
     environment: defaultenv
     steps:
