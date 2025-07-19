@@ -18,5 +18,4 @@ jobs:
         pip install -r requirements.txt
         python parse.py
       env:
-        NISARGADATTA_EMAIL: ${{ secrets.NISARGADATTA_EMAIL }}
-        NISARGADATTA_PWD: ${{ secrets.NISARGADATTA_PWD }}
+        NISBOTSECRET: ${{ secrets.NISBOTSECRET }}
