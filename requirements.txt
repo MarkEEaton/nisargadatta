@@ -20,4 +20,4 @@ requests==2.32.4
 six==1.15.0
 toml==0.10.1
 tqdm==4.66.4
-urllib3==2.6.0
+urllib3==2.6.3
