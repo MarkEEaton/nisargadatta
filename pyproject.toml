@@ -15,7 +15,7 @@ dependencies = [
     "idna",
     "joblib",
     "mastodon-py",
-    "nltk",
+    "nltk>=3.10.2",
     "packaging",
     "pyparsing",
     "python-dateutil",
