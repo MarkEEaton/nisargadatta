@@ -29,7 +29,7 @@ try:
     random_toot = randrange(0, len(filtered_sentences))
     sentence = filtered_sentences[random_toot]
     
-    mastodon.toot(sentence)
+    mastodon.toot(sentence + "\n\n #advaita")
     print("toot succeeded: " + sentence)
     
 except FileNotFoundError:
